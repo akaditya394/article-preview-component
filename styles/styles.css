@@ -1,0 +1,54 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Manrope", sans-serif;
+  background-color: #ecf2f8;
+}
+
+.flexbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10rem;
+}
+
+.flexboxitem-a {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  background: url("../images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flexboxitem-b {
+  height: 400px;
+  width: 700px;
+  background-color: green;
+}
+/*# sourceMappingURL=styles.css.map */
