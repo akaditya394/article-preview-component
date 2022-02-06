@@ -37,13 +37,13 @@
       <div class="flexboxitem-a"></div>
       <div class="flexboxitem-b">
         <div class="upper">
-          <p>
+          <p style="font-size: 34px; font-weight: 700">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </p>
         </div>
         <div class="middle">
-          <p>
+          <p style="font-size: 20px; font-weight: 500">
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I've got some simple tips to help
             you make any room feel complete.
@@ -55,14 +55,35 @@
           </div>
           <div class="account">
             <div class="name">
-              <p>Michelle Appleton</p>
+              <p style="font-size: 14px; font-weight: 700">Michelle Appleton</p>
               <p>28 Jun 2020</p>
             </div>
             <div class="date"></div>
           </div>
           <div class="btn">
+            <div id="share-panel">
+              <div class="share-text"><p style="color: #fff">SHARE</p></div>
+              <div class="facebook">
+                <img src="./images/icon-facebook.svg" alt="" class="facebook" />
+              </div>
+              <div class="twitter">
+                <img src="./images/icon-twitter.svg" alt="" class="twitter" />
+              </div>
+              <div class="pinterest">
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt=""
+                  class="pinterest"
+                />
+              </div>
+            </div>
             <button>
-              <img src="./images/icon-share.svg" alt="" class="share" />
+              <img
+                src="./images/icon-share.svg"
+                alt=""
+                id="share"
+                style="border-radius: 100px"
+              />
             </button>
           </div>
         </div>
@@ -73,7 +94,17 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Aditya Kumar</a>.
     </div>
+
+    <script>
+      const element = document.getElementById("share");
+      element.addEventListener("click", () => {
+        document.getElementById("share-panel").style.visibility =
+          document.getElementById("share-panel").style.visibility== "hidden"
+            ? "visible"
+            : "hidden";
+      });
+    </script>
   </body>
 </html>
